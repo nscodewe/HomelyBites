@@ -3,7 +3,6 @@ package com.example.homelybites.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -54,12 +53,10 @@ public class KitchenAdapter extends RecyclerView.Adapter<KitchenAdapter.ViewHold
     public int getItemCount() { return kitchens.size(); }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView imgKitchen;
         TextView tvKitchenName, tvRating, tvDistance, tvSpeciality;
 
         ViewHolder(View itemView) {
             super(itemView);
-            imgKitchen = itemView.findViewById(R.id.imgKitchen);
             tvKitchenName = itemView.findViewById(R.id.tvKitchenName);
             tvRating = itemView.findViewById(R.id.tvRating);
             tvDistance = itemView.findViewById(R.id.tvDistance);
